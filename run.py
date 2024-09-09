@@ -29,9 +29,9 @@ def get_input(regex, input_message=None, error_message=None):
             user_input = input()
         user_input = user_input.lower().strip()
         # End user UX if user want to cancel the order or quit the order
-        if user_input == "qqq" or user_input = "quit":
+        if user_input == "qqq" or user_input == "quit":
             sys.exit()
-        elif user_input == "ccc" or user_input = "canccel":
+        elif user_input == "ccc" or user_input == "canccel":
             return "CANCEL"
 
         # check if user input is equal to/ matches the regular expresssion
@@ -42,5 +42,7 @@ def get_input(regex, input_message=None, error_message=None):
         # An error message has then been specified
         if error_message:
             print(str(error_message))
-            
-    return user_input             
+
+    return user_input
+
+#########################
