@@ -3,25 +3,29 @@ import re
 import sys
 
 '''Golf Clubs to Hire Ordering System'''
-#Configure ordering system #
-#The maximum number of sets of golf clubs per order
+# Configure ordering system #
+# The maximum number of sets of golf clubs per order
 MAX_CLUBS = 5
-#Delivery charge to Hotel & Apartment != ( price of delviery in € )
+# Delivery charge to Hotel & Apartment != ( price of delviery in € )
 DELIVERY_CHARGE = 15
 # List of club sets available and price
 
-CLUBS_AVAILABLE = {
-    "Titleist": 95,
-    "Taylor Made": 95,
-    "Srixon": 85,
-    "Callaway": 85,
-    "Srixon": 80,
-    "Wilson": 80
-}
+# top 7 premium brands available in full set offerings, euro € prices #
+CLUBS_AVAILABLE = (
+    {"name": "Titleist",      "price": 95},
+    {"name": "Taylor Made",   "price": 95},
+    {"name": "Srixon",        "price": 85},
+    {"name": "Callaway",      "price": 85},
+    {"name": "Wilson",        "price": 85},
+    {"name": "Ping",          "price": 75},
+    {"name": "Adams",         "price": 75},
+)
 # End of configuration and products available
+
 
 def get_input(regex, input_message=None, error_message=None):
     '''RegEx or regular expression, validate and match input'''
+    '''definition of a function and two lines spaces above and below PEP8'''
     while True:
         if input_message:
             user_input = input(str(input_message))
@@ -45,4 +49,30 @@ def get_input(regex, input_message=None, error_message=None):
 
     return user_input
 
-#########################
+
+def print_line(line):
+    '''Prints message used for print order'''
+    print("| {:54} |".format(line))
+
+
+def print_order(order):
+    '''Prints the clubs order to the screen'''
+    print_line("Name: " + order.name)
+    print_line("Order type: " + ("Pickup" if order.pickup else "Delivery"))
+    if not order.pickup:
+        print_line("Delivery address: " + order.address)
+        print_line("Customer phone number" + order.phone)
+    print_line("")
+    print_line("Order summary:{:15}Price each:{:5}Subtotal:".format("", ""))
+    for brand in order.clubs:
+        print_line("{:5}x {:22}{:5}€{:5.2f}{:8}€{:>5.2f}".format(
+            brand["amount"], brand["name"], "",
+            brand["price"], "", brand["price"]*brand["amount"]))
+    if not order.pickup:
+        print_line("{:4}Delivery charge{:29}€{:>5.2f}".format(
+            "", "", DELIVERY_CHARGE))
+    
+    print_line("{:48}------".format(""))
+    print_line("{:40} Total: €{:.2f}".format("", order.cost))
+
+
