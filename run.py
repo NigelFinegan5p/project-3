@@ -35,7 +35,7 @@ def get_input(regex, input_message=None, error_message=None):
         # End user UX if user want to cancel the order or quit the order
         if user_input == "qqq" or user_input == "quit":
             sys.exit()
-        elif user_input == "ccc" or user_input == "canccel":
+        elif user_input == "ccc" or user_input == "cancel":
             return "CANCEL"
 
         # check if user input is equal to/ matches the regular expresssion
@@ -74,5 +74,16 @@ def print_order(order):
     
     print_line("{:48}------".format(""))
     print_line("{:40} Total: €{:.2f}".format("", order.cost))
+
+
+class Order():
+  '''Holds the information of each clients golf clubs order, can got info itself'''
+  def __init__(self):
+      self.name = ""
+      self.pickup = False
+      self.address = None
+      self.phone = None
+      self.clubs = []
+      self.cost = 0
 
 
