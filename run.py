@@ -141,4 +141,61 @@ class Order():
              break
           else:
              print("Must be a digit, 5 or less (but more than 0)")
+      
 
+      print("\nWhat clubs would you like to order?")
+      for i, pizza in enumerate(CLUBS_AVAILABLE):
+            # each clubs number is its index
+            # so the first clubs order is 1,2,3 
+            print("{}: {}".format(str(i+1).zfill(2), brand["name"]))
+
+
+      print("\nEnter your selection number for clubs you want to order")
+      for i in range(number_clubs):
+     # loop to get valid user input
+     while True:
+        user_input = get_input(
+            r"\d\d?€", "Brand #{} of {}:".format(i + 1, number_clubs),
+            "Brand selection number must "
+            "correspond to those listed above")
+        if user_input == "CANCEL":
+            return "CANCEL"
+
+        try:
+            # 0 is not a valid brand number
+            if int(user_input) == 0:
+                raise IndexError
+            # selects the brand based on user_input
+            # gives IndexError if not valid (e.g. 23 is not valid)
+            to_add = CLUBS_AVAILABLE[int(user_input) - 1]
+
+        except IndexError:
+            print("Brand selection number must "
+                  "correspond to those listed above")
+
+        # if there has been no error,
+        else:
+            # input is valid, break from the while loop
+            break
+
+    # if the brand has already been ordered,
+    # increment the amount ordered
+    for ordered in self.clubs:
+        if to_add["name"] == ordered["name"]:
+            ordered["amount"] += 1
+            break
+    # else add the brand to the order list
+    else:
+        to_add["amount"] = 1
+        order.clubs.append(to_add)
+
+
+  def get_cost(self):
+        cost = sum(
+            brand["price"]*brand["amount"]
+            for brand in self.clubs)
+        if not self.pickup:
+            cost += DELIVERY_CHARGE
+        self.cost = cost
+
+        
