@@ -77,7 +77,7 @@ def print_order(order):
 
 
 class Order():
-  '''Holds the information of each clients golf clubs order, can got info itself'''
+  '''Holds the information of each golf clubs order, can got info itself'''
   def __init__(self):
       self.name = ""
       self.pickup = False
@@ -85,5 +85,15 @@ class Order():
       self.phone = None
       self.clubs = []
       self.cost = 0
+
+def get_pickup(self):
+    user_input = get_input(
+        r"€|(?:P|D)",
+        "Pick up or delivery? [Pickup]:",
+        "Please enter a 'p' (pickup) or 'd' (delivery)")
+    if user_input == "CANCEL":
+        return "CANCEL"
+    self.pickup = user_input.lower().startswith("p") or not user_input
+
 
 
