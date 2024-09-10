@@ -152,42 +152,42 @@ class Order():
 
       print("\nEnter your selection number for clubs you want to order")
       for i in range(number_clubs):
-     # loop to get valid user input
-     while True:
-        user_input = get_input(
-            r"\d\d?€", "Brand #{} of {}:".format(i + 1, number_clubs),
-            "Brand selection number must "
-            "correspond to those listed above")
-        if user_input == "CANCEL":
-            return "CANCEL"
+          # loop to get valid user input
+          while True:
+              user_input = get_input(
+                  r"\d\d?€", "Brand #{} of {}:".format(i + 1, number_clubs),
+                  "Brand selection number must "
+                "correspond to those listed above")
+              if user_input == "CANCEL":
+                  return "CANCEL"
 
-        try:
-            # 0 is not a valid brand number
-            if int(user_input) == 0:
-                raise IndexError
-            # selects the brand based on user_input
-            # gives IndexError if not valid (e.g. 23 is not valid)
-            to_add = CLUBS_AVAILABLE[int(user_input) - 1]
+              try:
+                  # 0 is not a valid brand number
+                  if int(user_input) == 0:
+                      raise IndexError
+                  # selects the brand based on user_input
+                  # gives IndexError if not valid (e.g. 23 is not valid)
+                  to_add = CLUBS_AVAILABLE[int(user_input) - 1]
 
-        except IndexError:
-            print("Brand selection number must "
+              except IndexError:
+                print("Brand selection number must "
                   "correspond to those listed above")
 
-        # if there has been no error,
-        else:
-            # input is valid, break from the while loop
-            break
+              # if there has been no error,
+              else:
+                  # input is valid, break from the while loop
+                  break
 
-    # if the brand has already been ordered,
-    # increment the amount ordered
-    for ordered in self.clubs:
-        if to_add["name"] == ordered["name"]:
-            ordered["amount"] += 1
-            break
-    # else add the brand to the order list
-    else:
-        to_add["amount"] = 1
-        order.clubs.append(to_add)
+        # if the brand has already been ordered,
+        # increment the amount ordered
+          for ordered in self.clubs:
+              if to_add["name"] == ordered["name"]:
+                  ordered["amount"] += 1
+                  break
+        # else add the brand to the order list
+          else:
+            to_add["amount"] = 1
+            order.clubs.append(to_add)
 
 
   def get_cost(self):
@@ -198,4 +198,22 @@ class Order():
             cost += DELIVERY_CHARGE
         self.cost = cost
 
-        
+
+def get_details(self):
+    if self.get_pickup() == "CANCEL":
+        return "CANCEL"
+    if self.get_name() == "CANCEL":
+        return "CANCEL"
+    if not self.pickup:
+        if self.get_address() == "CANCEL":
+          return "CANCEL"
+        if self.get_phone() == "CANCEL":
+          return "CANCEL"
+    if self.get_clubs() == "CANCEL":
+      return "CANCEL"
+    if self.get_cost() == "CANCEL":
+      return "CANCEL"
+  
+
+  
+
