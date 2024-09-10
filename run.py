@@ -86,7 +86,7 @@ class Order():
       self.clubs = []
       self.cost = 0
 
-def get_pickup(self):
+  def get_pickup(self):
     user_input = get_input(
         r"€|(?:P|D)",
         "Pick up or delivery? [Pickup]:",
@@ -95,5 +95,14 @@ def get_pickup(self):
         return "CANCEL"
     self.pickup = user_input.lower().startswith("p") or not user_input
 
+  def get_name(self):
+        user_input = get_input(
+            r"[A-Z]+€",
+            "Enter customer name:",
+            "Name must only contain letters")
+        if user_input == "CANCEL":
+            return "CANCEL"
+        self.name = user_input[:48]
+  
 
 
