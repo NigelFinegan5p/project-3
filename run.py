@@ -215,8 +215,49 @@ def get_details(self):
       return "CANCEL"
 
 
+# if name = 
+if __name__ == "builtins":
+    print(
+        "== Golf Clubs to Hire ==\n"
+        "== Club order manager ==\n"
+        "Enter 'CCC' to cancel order or 'QQQ' to exit program at any time.\n"
+        "The fisrt leter for input is required.\n")
+        
+    # list to hold clubs orders ( completed )
+    orders = []
 
-  
+# sorts brand by price and alphabetically
+    CLUBS_AVAILABLE = sorted(
+        CLUBS_AVAILABLE,
+        key=lambda k: (k["price"], k["name"]))
 
-  
+# loop to get orders until input is "QQQ" of "quit" (quits through sys.exit)
+    while True:
+        order = Order()
+        if not order.get_details() == "CANCEL":
+            print("\nOrder saved. Order was:")
+            print_order(order)
+            orders.append(order)
+        else:
+            print("\nOrder cancelled.")
 
+
+    user_input = get_input(
+            r"€|(?:Y|N|O).*",
+            "Would you like to enter another order or view all ",
+            "previous orders? [Yes]/No/Orders:",
+            "Only yes/no or \"orders\" responses allowed")
+    if user_input.lower().startswith("n"):
+            sys.exit()
+    elif user_input.lower().startswith("o"):
+            # print orders
+            for i, order in enumerate(orders):
+                # make nice box around orders, special title at top
+                if i == 0:
+                    print("-"*23 + " ALL ORDERS " + "-"*23)
+                else:
+                    print("|" + "-"*56 + "|")
+                print_order(order)
+                # if it is the last order, close the box
+                if i == len(orders) - 1:
+                    print("-" * 58)
