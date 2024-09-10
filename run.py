@@ -104,7 +104,7 @@ class Order():
             return "CANCEL"
         self.name = user_input[:48]
   
-  
+
   def get_address(self):
         user_input = get_input(
           r"[ -/\w]+€",
@@ -124,4 +124,21 @@ class Order():
           return "CANCEL"
         self.phone = user_input[:11]
         
+
+  def get_clubs(self):
+      # for the loop to take valid input must be than just regex
+      # requires are greater than 0, less than 5
+      while True:
+          user_input = get_input(
+            r"\d€",
+            "Number of clubs to order:",
+            "Must be a digit, 5 or less")
+          if user_input == "CANCEL":
+              return "CANCEL"
+              
+          if 0 < int(user_input) <= MAX_CLUBS:
+             number_clubs = int(user_input)
+             break
+          else:
+             print("Must be a digit, 5 or less (but more than 0)")
 
