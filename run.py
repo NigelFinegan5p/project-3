@@ -213,6 +213,9 @@ def get_details(self):
       return "CANCEL"
     if self.get_cost() == "CANCEL":
       return "CANCEL"
+
+
+
   
 
   
