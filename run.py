@@ -104,5 +104,13 @@ class Order():
             return "CANCEL"
         self.name = user_input[:48]
   
-
+  def get_address(self):
+        user_input = get_input(
+          r"[ -/\w]+€",
+          "Delivery address:",
+          "Address must only contain alphanumeric characters")
+        if user_input == "CANCEL":
+            return "CANCEL"
+        self.address = user_input[:36]
+        
 
