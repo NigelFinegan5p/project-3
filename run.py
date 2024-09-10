@@ -104,6 +104,7 @@ class Order():
             return "CANCEL"
         self.name = user_input[:48]
   
+  
   def get_address(self):
         user_input = get_input(
           r"[ -/\w]+€",
@@ -112,5 +113,15 @@ class Order():
         if user_input == "CANCEL":
             return "CANCEL"
         self.address = user_input[:36]
+
+
+  def get_phone(self):
+        user_input = get_input(
+          r"\d+€",
+          "Phone number",
+          "Phone number must only contain numbers")
+        if user_input == "CANCEL":
+          return "CANCEL"
+        self.phone = user_input[:11]
         
 
