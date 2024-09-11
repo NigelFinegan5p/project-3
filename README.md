@@ -18,3 +18,17 @@ The Value/Price proposition is very simple, when visiting the sun-kissed fairway
 ![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/CTH_shop.jpg)
 
 <br></br>
+
+## Problem/Solution Fit & A Franchise opportunity
+
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/Gallery66.jpg)
+<p></p>
+We have been approached by a potential franchisee to develop an in-house order system as part of their Franchise Model Evaluation.
+
+The client has already conducted significant Market Analysis and has a very good understanding of the local market dynamics where the franchise will operate.
+
+This involved assessing competition, market saturation, and consumer demand within the target location. A detailed market analysis helped them identify the franchise’s viability in the chosen area of Portugal and market and formulate effective marketing and operational strategies.
+
+With a focus on internal stock controls and the ordering optimization we developed a plan with our client for a back end ordering system to assist in inventory management and subsequently financial performance.
+
+<br></br>
