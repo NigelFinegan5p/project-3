@@ -1,5 +1,7 @@
-CLUBS TO HIRE -
+# CLUBS TO HIRE
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/Clubs_to_Hire_logo_Copy.jpg)
 
+<br></br>
 Clubs to Hire was set up in 2010 to give golfers a real alternative with their golf travel needs.
 
 The business model allows users to try out the new models to market and with the convenience of collecting them on arrival at your airport of choice.
@@ -11,4 +13,3 @@ Clubs to Hire offer a variety of sets to suit all standards and tastes. They pro
 They can arrange to deliver and collect your set from your resort/ accommodation of choice.
 
 The Value/Price proposition is very simple, when visiting the sun-kissed fairways of Portugal, Spain and beyond to the raw beauty of an Irish Links, leave your clubs at home and enjoy the latest in golf club technology.
-<br></br>
