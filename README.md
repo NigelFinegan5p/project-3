@@ -13,3 +13,8 @@ Clubs to Hire offer a variety of sets to suit all standards and tastes. They pro
 They can arrange to deliver and collect your set from your resort/ accommodation of choice.
 
 The Value/Price proposition is very simple, when visiting the sun-kissed fairways of Portugal, Spain and beyond to the raw beauty of an Irish Links, leave your clubs at home and enjoy the latest in golf club technology.
+<p></p>
+
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/CTH_shop.jpg)
+
+<br></br>
