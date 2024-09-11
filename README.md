@@ -37,11 +37,13 @@ With a focus on internal stock controls and the ordering optimization we develop
 ### Languages..
 
 <p></p>
+
 -   [Python](https://www.python.org/)  is an interpreted, object-oriented, versatile and powerful programming language used for example for web development, machine learning and data science. Python3 was used to create the command line interface for this Golf Clubs ordering system.
 
 ### Other Technologies and Libraries
 
 <p></p>
+
 -   [Github](https://github.com/)  and  [Git](https://git-scm.com/)  were used for version control. Github provides the web interface for the Git code repository.
 -   [Gitpod](https://gitpod.io/)  was used as the cloud-based IDE for this project.
 -   [Heroku](http://heroku.com/)  is a container-based cloud Platform as a service used to deploy, manage and scale modern applications. Heroku was used to deploy this game application.
