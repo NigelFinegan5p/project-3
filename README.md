@@ -1,32 +1,14 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+CLUBS TO HIRE -
 
-Welcome,
+Clubs to Hire was set up in 2010 to give golfers a real alternative with their golf travel needs.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+The business model allows users to try out the new models to market and with the convenience of collecting them on arrival at your airport of choice.
 
-## Reminders
+So if you are going on a golfing holiday with friends or family or on business, they can save you the hassle of bringing your clubs through busy airport terminals, waiting for them at excess luggage, paying extreme carriage charges and the worry of having them stolen or damaged.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Clubs to Hire offer a variety of sets to suit all standards and tastes. They provide the latest clubs from the top golf manufacturer’s, suitable sized golf bags, friendly service and value for money.
 
-## Creating the Heroku app
+They can arrange to deliver and collect your set from your resort/ accommodation of choice.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+The Value/Price proposition is very simple, when visiting the sun-kissed fairways of Portugal, Spain and beyond to the raw beauty of an Irish Links, leave your clubs at home and enjoy the latest in golf club technology.
+<br></br>
