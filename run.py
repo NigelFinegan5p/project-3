@@ -1,9 +1,11 @@
 import re
 import sys
-
+'''Golf Clubs to Hire Ordering System'''
+# Configure ordering system #
+# The maximum number of sets of golf clubs per order
 MAX_CLUBS = 5
 DELIVERY_CHARGE = 15
-
+# top 7 premium brands available in full set offerings, euro € prices #
 CLUBS_AVAILABLE = [
     {"name": "Titleist", "price": 95},
     {"name": "Taylor Made", "price": 95},
