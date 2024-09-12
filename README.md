@@ -14,6 +14,7 @@ They can arrange to deliver and collect your set from your resort/ accommodation
 
 The Value/Price proposition is very simple, when visiting the sun-kissed fairways of Portugal, Spain and beyond to the raw beauty of an Irish Links, leave your clubs at home and enjoy the latest in golf club technology.
 <p></p>
+<p></p>
 
 ![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/CTH_shop.jpg)
 
