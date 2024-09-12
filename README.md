@@ -343,3 +343,24 @@ Prompts the end user to either place another order, view all previous orders, or
 <br></br>
 <br></br>
 
+
+
+**Deployment**
+
+This application uses Heroku for deployment
+
+**Create the application**
+
+1.  First create the requirements file the Heroku will use to import the dependencies required for deployment: type pip3 freeze > requirements.txt. For this project the requirements.txt file is empty as no libraries or modules were imported other than from the standard python library.
+2.  Navigate to the [Heroku](https://www.heroku.com/) website
+3.  Create an account by entering your email address and a password
+4.  Activate the account through the authentication email sent to your email account
+5.  Click the new button and select create a new app from the dropdown menu
+6.  Enter a name for the application which must be unique, in this case the app name is project-3p
+7.  Select a region, in this case Europe
+8.  Click create app
+
+**Heroku settings**
+
+1.  From the horizontal menu bar select 'Settings'.
+2.  In the buildpacks section, where further necessary dependencies are installed, click 'add buildpack'. Select 'Python' first and click 'save changes'. Next click 'node.js' and then click 'save changes' again. The 'Python' buildpack must be above the 'node.js' buildpack'. They can be clicked on and dragged to change the order if necessary.
