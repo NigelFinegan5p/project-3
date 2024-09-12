@@ -51,6 +51,8 @@ With a focus on internal stock controls and the ordering optimization we develop
 
 <p></p>
 
+<br></br>
+
 ## Our code & the why ?
 
 The code below is a simple golf club rental ordering system implemented in Python. It allows users to place orders, choose between pickup or delivery, and view their order details. All processed orders can be viewed by entering the word ***Orders***.
