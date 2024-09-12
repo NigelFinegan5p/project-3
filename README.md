@@ -32,6 +32,11 @@ This involved assessing competition, market saturation, and consumer demand with
 
 With a focus on internal stock controls and the ordering optimization we developed a plan with our client for a back end ordering system to assist in inventory management and subsequently financial performance.
 
+<p></p>
+
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/francies-banner-1.jpeg)
+
+<br></br>
 <br></br>
 
 ## Scope, build & Technologies
@@ -345,7 +350,7 @@ Prompts the end user to either place another order, view all previous orders, or
 
 
 
-**Deployment**
+## Deployment
 
 This application uses Heroku for deployment
 
