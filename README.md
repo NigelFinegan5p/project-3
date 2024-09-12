@@ -63,8 +63,11 @@ The code below is a simple golf club rental ordering system implemented in Pytho
 
     import re 
     import sys
-Imports the `re` module for regular expression operations.
-Imports the `sys` module to access system-specific parameters and functions.
+Importing the `re` module allows for regular expression operations.
+Importing the `sys` module allows access to system-specific parameters and functions.
+
+<p></p>
+<p></p>
 
     MAX_CLUBS = 5 
     DELIVERY_CHARGE = 15
@@ -72,6 +75,10 @@ Imports the `sys` module to access system-specific parameters and functions.
 MAX_CLUBS = 5: Sets the maximum number of golf club sets that can be ordered in one transaction.
 
 If delivery is selected in the system a DELIVERY_CHARGE = 15: Defines the cost of delivery.
+
+
+<p></p>
+<p></p>
 
     CLUBS_AVAILABLE = [ 
      {"name": "Titleist", "price": 95},
@@ -107,9 +114,11 @@ CLUBS_AVAILABLE: A dictionary list where each dictionary represents a golf club 
 
 `def get_input():` Prompts the user for input and validates it against a regular expression.
 `regex`: This module provides regular expression matching operations similar to those found in Perl.
-`input_message`: Prompt message displayed to the user.
-`error_message`: Error message displayed if input is invalid.
-  Returns sanitized user input or special commands like "CANCEL".
+<p></p>
+
+`input_message`: A Prompt message is displayed to the user.<p></p>
+`error_message`: An Error message is displayed if the input is invalid.
+ 
 
 
 <br></br>
@@ -126,9 +135,11 @@ CLUBS_AVAILABLE: A dictionary list where each dictionary represents a golf club 
 <p></p>
 
 Function Definition, This line defines a function named `print_order` that takes a single argument, `order`.
-Print the Name This line prints the name of the customer from the `order` object. It uses `order.name` to retrieve the customer's name and concatenates it with the string `"Name: "`. 
-Print Order Type, This line prints the type of order based on the `pickup` attribute of the `order` object. If `order.pickup` is `True`, it prints `"Pickup"`. If `order.pickup` is `False`, it prints `"Delivery"`.
-Conditional Delivery Information These lines execute only if `order.pickup` is `False`. It prints the delivery address and customer phone number from the `order` object. The `order.address` and `order.phone` attributes are used to fetch and display this information based on the delivery selection.
+Print the Name, line prints the name of the customer from the `order` object.<p></p>
+It uses `order.name` to retrieve the customer's name and concatenates it with the string `"Name: "`. <p></p>
+Print Order Type, This line prints the type of order based on the `pickup` attribute of the `order` object. If `order.pickup` is `True`, it prints `"Pickup"`. If `order.pickup` is `False`, it prints `"Delivery"`.<p></p>
+Conditional Delivery Information These lines execute only if `order.pickup` is `False`. It prints the delivery address and customer phone number from the `order` object. <p></p>
+The `order.address` and `order.phone` attributes are used to fetch and display this information based on the delivery selection.
 
 
 <br></br>
@@ -148,6 +159,7 @@ Conditional Delivery Information These lines execute only if `order.pickup` is `
 
 
 <br></br>
+
     def get_pickup(self): 
         user_input = get_input( 
             r"[PpDd]", "Pick up or delivery? [Pickup]:", 
@@ -155,6 +167,7 @@ Conditional Delivery Information These lines execute only if `order.pickup` is `
         if user_input == "CANCEL": 
            return "CANCEL" 
            self.pickup = user_input.lower().startswith("p") or not user_input
+
 
 `get_pickup()`: Prompts the user (Business owner/franchisee) to choose between pickup or delivery and sets the pickup or delivery attribute accordingly. (Based on web or phone orders)
 
@@ -280,7 +293,7 @@ Conditional Delivery Information These lines execute only if `order.pickup` is `
           "To select the Brand of Clubs please choose numbers 1 to 7 (Titleist = 7)\n"
           "The first letter for input are required.\n")
 
-Check if the script is being run directly and prints introductory information about the system. As per the above Golf Clubs to Hire etc.
+When it runs it checks if the script is being run directly and prints introductory information about the system. As per the above Golf Clubs to Hire etc.
 
 
 <br></br>
