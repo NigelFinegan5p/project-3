@@ -16,6 +16,7 @@ CLUBS_AVAILABLE = [
     {"name": "Adams", "price": 75},
 ]
 
+
 def get_input(regex, input_message=None, error_message=None):
     while True:
         if input_message:
@@ -33,8 +34,10 @@ def get_input(regex, input_message=None, error_message=None):
             print(str(error_message))
     return user_input
 
+
 def print_line(line):
     print("| {:54} |".format(line))
+
 
 def print_order(order):
     print_line("Name: " + order.name)
@@ -53,6 +56,7 @@ def print_order(order):
             "", "", DELIVERY_CHARGE))
     print_line("{:48}------".format(""))
     print_line("{:40} Total: €{:.2f}".format("", order.cost))
+
 
 class Order:
     def __init__(self):
@@ -154,6 +158,7 @@ class Order:
         if self.get_clubs() == "CANCEL":
             return "CANCEL"
         self.get_cost()
+
 
 if __name__ == "__main__":
     print("== Golf Clubs to Hire ==\n"
