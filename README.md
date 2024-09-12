@@ -396,3 +396,21 @@ This application uses Heroku for deployment
 |Order saved| Pass |
 | Order summary with price and delivery | Pass|
 |  |  |
+
+
+<br></br>
+
+## Bibliography & Sources
+
+IMPRACTICAL PYTHON PROJECTS, Author Lee Vaughan
+
+[https://www.kea.nu/files/textbooks/humblelearn2code/impracticalpythonprojects.pdf](https://www.kea.nu/files/textbooks/humblelearn2code/impracticalpythonprojects.pdf)
+
+
+Python Distilled (Developers Library) (1st Edition) (David Beazley)
+
+[https://www.scribd.com/document/764971811/Python-Distilled-Developers-Library-1st-Edition-David-Beazley](https://www.scribd.com/document/764971811/Python-Distilled-Developers-Library-1st-Edition-David-Beazley)
+
+Python for Dummies by Aahz Maruch and Stef Maruch
+
+[https://www.vailtech.net/sites/default/files/Python_Essentials_for_Dummies.pdf](https://www.vailtech.net/sites/default/files/Python_Essentials_for_Dummies.pdf)
