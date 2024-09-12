@@ -22,7 +22,7 @@ The Value/Price proposition is very simple, when visiting the sun-kissed fairway
 
 ## Problem/Solution Fit & A Franchise opportunity
 
-![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/Gallery66.jpg)
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/Faro%2BShop%2B2018.jpg)
 <p></p>
 We have been approached by a potential franchisee to develop an in-house order system as part of their Franchise Model Evaluation.
 
