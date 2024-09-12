@@ -364,3 +364,29 @@ This application uses Heroku for deployment
 
 1.  From the horizontal menu bar select 'Settings'.
 2.  In the buildpacks section, where further necessary dependencies are installed, click 'add buildpack'. Select 'Python' first and click 'save changes'. Next click 'node.js' and then click 'save changes' again. The 'Python' buildpack must be above the 'node.js' buildpack'. They can be clicked on and dragged to change the order if necessary.
+
+
+<br></br>
+
+
+
+## Testing
+
+| Manual Testing | Details  |
+|--|--|
+| Pick Up or delivery (Delivery entered) | Pass  |
+| Enter Customer Name| Pass |
+| Delivery Address| Pass|
+| Phone Number | Pass |
+|Number of clubs to order| Pass  |
+| Enter Brand of clubs you would like to order |Pass|
+| Order Saved| Pass  |
+| Order Summary with price and delivery locations| Pass  |
+|--|--|
+| Pick up or delivery (Pick up entered) | Pass  |
+| Enter Customer Name | Pass|
+| Number of clubs to order| Pass|
+| Selection of brand no 1 Adams | Pass |
+|Order saved| Pass |
+| Order summary with price and delivery | Pass|
+|  |  |
