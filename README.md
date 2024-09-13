@@ -385,6 +385,19 @@ This application uses Heroku for deployment
 
 ## Testing
 
+**Manual Testing in terminal**
+
+Before stepping into creating tests for our application, we approached this with three basic steps of every test:
+
+1. Create your inputs
+2. Execute the code,
+3. Capturing the output
+4. Compare the output with an expected result
+5. Assess output
+6. Handle expected failures if needed
+
+<br></br>
+
 | Manual Testing | Details  |
 |--|--|
 | Pick Up or delivery (Delivery entered) | Pass  |
