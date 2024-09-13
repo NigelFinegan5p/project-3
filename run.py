@@ -141,7 +141,8 @@ class Order:
                 self.clubs.append(to_add)
 
     def get_cost(self):
-        self.cost = sum(brand["price"] * brand["amount"] for brand in self.clubs)
+        self.cost = sum(brand["price"] *
+                        brand["amount"] for brand in self.clubs)
         if not self.pickup:
             self.cost += DELIVERY_CHARGE
 
@@ -164,11 +165,13 @@ if __name__ == "__main__":
     print("== Golf Clubs to Hire ==\n"
           "== Club order manager ==\n"
           "Enter 'CCC' to cancel order or 'QQQ' to exit program at any time.\n"
-          "To select the Brand of Clubs please choose numbers 1 to 7 (Titleist = 7)\n"
+          "To select the Brand of Clubs please \
+          choose numbers 1 to 7 (Titleist = 7)\n"
           "The first letter for input are required.\n")
 
     orders = []
-    CLUBS_AVAILABLE = sorted(CLUBS_AVAILABLE, key=lambda k: (k["price"], k["name"]))
+    CLUBS_AVAILABLE = sorted(CLUBS_AVAILABLE,
+                             key=lambda k: (k["price"], k["name"]))
 
     while True:
         order = Order()
@@ -180,7 +183,8 @@ if __name__ == "__main__":
             print("\nOrder cancelled.")
 
         user_input = get_input(
-            r"[YyNnOo]", "Would you like to enter another order or view all previous orders? [Yes]/No/Orders:",
+            r"[YyNnOo]", "Would you like to enter another order \
+            or view all previous orders? [Yes]/No/Orders:",
             "Only yes/no or \"orders\" responses allowed")
         if user_input.lower().startswith("n"):
             sys.exit()
