@@ -38,7 +38,14 @@ With a focus on internal stock controls and the ordering optimization we develop
 ![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/francies-banner-1.jpeg)
 
 <br></br>
+
+ ***UX-End User & Validating user input***
+
+There are many ways to validate input in Python. One of the key objectives of this project was to ensure that the program receives valid and readable input data to avoid problems with the program’s operation and output correctly the price and quantity with customer details, while tracking all orders per programme run. In essence Input validation code checks that values entered by the user, such as text or numeric values from the input () function, and are formatted correctly.
+
+
 <br></br>
+
 
 ## Scope, build & Technologies
 ### Language
