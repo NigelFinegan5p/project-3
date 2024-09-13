@@ -39,6 +39,13 @@ With a focus on internal stock controls and the ordering optimization we develop
 
 <br></br>
 
+## Design & Data Model
+
+The flow chart with the diagram shows at high level, the flow of control within the application and the inputs required. The final output shows an order summary with total price and quantity with customer details.
+
+<br></br>
+<br></br>
+
 ## **UX End User & Validating User Input**
 
 There are many ways to validate input in Python. One of the key objectives of this project was to ensure that the program receives valid and readable input data to avoid problems with the program’s operation and output correctly the price and quantity with customer details, while tracking all orders as per the programme run. In essence Input validation code checks that values entered by the user, such as text or numeric values from the input () function, and are formatted correctly.
