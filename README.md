@@ -435,6 +435,14 @@ With a focus on the guidelines and following them to really improve my project c
 
 <br></br>
 
+**Line too long (82 > 79 characters) (E501)**
+Line lengths are recommended to be no greater than 79 characters. The reasoning for this comes from PEP8 itself:
+
+> Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
+
+We addressed these issues by splitting the lines and ensuring the indentation is correct.
+
+<br></br>
 
 
 
