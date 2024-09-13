@@ -165,8 +165,8 @@ if __name__ == "__main__":
     print("== Golf Clubs to Hire ==\n"
           "== Club order manager ==\n"
           "Enter 'CCC' to cancel order or 'QQQ' to exit program at any time.\n"
-          "To select the Brand of Clubs please \
-          choose numbers 1 to 7 (Titleist = 7)\n"
+          "To select the Brand of Clubs please choose:\
+           numbers 1 to 7 (Titleist = 7)\n"
           "The first letter for input are required.\n")
 
     orders = []
