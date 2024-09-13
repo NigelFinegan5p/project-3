@@ -39,7 +39,7 @@ With a focus on internal stock controls and the ordering optimization we develop
 
 <br></br>
 
-## **UX End user & Validating user input**
+## **UX End User & Validating User Input**
 
 There are many ways to validate input in Python. One of the key objectives of this project was to ensure that the program receives valid and readable input data to avoid problems with the program’s operation and output correctly the price and quantity with customer details, while tracking all orders as per the programme run. In essence Input validation code checks that values entered by the user, such as text or numeric values from the input () function, and are formatted correctly.
 
@@ -48,9 +48,9 @@ Step.2 Enter Customer name<p></p>
 Step.3 Enter delivery address<p></p>
 Step.4 Enter Phone Number<p></p>
 Step.5 Enter Number of clubs to order<p></p>
-Step.6 What clubs would you like to order<p></p>
+Step.6 Enter what clubs would you like to order<p></p>
 Step.7 Enter the number of sets you want to order<p></p>
-Step.8 Based on selection order total is displayed with price and customer details<p></p>
+Step.8 Based on selection the order total is displayed with price and customer details<p></p>
 <p></p>
 <p></p>
 <p></p>
