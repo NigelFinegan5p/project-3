@@ -420,6 +420,14 @@ Before stepping into creating tests for our application, we approached this with
 
 <br></br>
 
+PEP8 Linter
+
+Writing high-quality, readable Python code by using the guidelines laid out in PEP 8 and tested using the pep8 linter we found the following errors and fixed then accordingly.
+<p></p>
+With a focus on the guidelines and following them to really improve my project code, and its potential especially when it comes to sharing my portfolio code with potential employers or collaborators in the future.
+
+
+
 ## Bibliography & Sources
 
 IMPRACTICAL PYTHON PROJECTS, Author Lee Vaughan
