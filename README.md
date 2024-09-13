@@ -387,7 +387,7 @@ This application uses Heroku for deployment
 
 **Manual Testing in terminal**
 
-Before stepping into creating tests for our application, we approached this with three basic steps of every test:
+Before stepping into creating tests for our application, we approached this with a linear & logical steps approach.
 
 1. Create your inputs
 2. Execute the code,

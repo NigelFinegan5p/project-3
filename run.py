@@ -17,6 +17,8 @@ CLUBS_AVAILABLE = [
 ]
 
 
+# Regex regular expression matching
+# prompts the user for input validates regular expression
 def get_input(regex, input_message=None, error_message=None):
     while True:
         if input_message:
@@ -58,6 +60,9 @@ def print_order(order):
     print_line("{:40} Total: €{:.2f}".format("", order.cost))
 
 
+''' order class definition, order with attributes '''
+
+
 class Order:
     def __init__(self):
         self.name = ""
@@ -67,6 +72,7 @@ class Order:
         self.clubs = []
         self.cost = 0
 
+# prompts user for pick up or delivey
     def get_pickup(self):
         user_input = get_input(
             r"[PpDd]", "Pick up or delivery? [Pickup]:",
@@ -75,6 +81,7 @@ class Order:
             return "CANCEL"
         self.pickup = user_input.lower().startswith("p") or not user_input
 
+# prompts user for name limited to 48 characters
     def get_name(self):
         user_input = get_input(r"[A-Za-z]+", "Enter customer name:",
                                "Name must only contain letters")
@@ -82,6 +89,7 @@ class Order:
             return "CANCEL"
         self.name = user_input[:48]
 
+# prompts user for a delivery address, max 36 characters
     def get_address(self):
         user_input = get_input(
             r"[ -/\w]+", "Delivery address:",
@@ -90,6 +98,7 @@ class Order:
             return "CANCEL"
         self.address = user_input[:36]
 
+# prompts user for phone number 11 numeric inputs
     def get_phone(self):
         user_input = get_input(r"\d+", "Phone number:",
                                "Phone number must only contain numbers")
@@ -97,6 +106,7 @@ class Order:
             return "CANCEL"
         self.phone = user_input[:11]
 
+# specify number of club sets, 1 to 7
     def get_clubs(self):
         while True:
             user_input = get_input(r"\d+", "Number of clubs to order:",
@@ -140,12 +150,14 @@ class Order:
                 to_add["amount"] = 1
                 self.clubs.append(to_add)
 
+# calculates the cost based on price * quantity
     def get_cost(self):
         self.cost = sum(brand["price"] *
                         brand["amount"] for brand in self.clubs)
         if not self.pickup:
             self.cost += DELIVERY_CHARGE
 
+# gets details for colation for delivery & pick up
     def get_details(self):
         if self.get_pickup() == "CANCEL":
             return "CANCEL"
@@ -161,6 +173,7 @@ class Order:
         self.get_cost()
 
 
+''' main execution block '''
 if __name__ == "__main__":
     print("== Golf Clubs to Hire ==\n"
           "== Club order manager ==\n"
@@ -169,10 +182,12 @@ if __name__ == "__main__":
            Numbers 1 to 7 (Titleist = 7)\n"
           "The first letter for input are required.\n")
 
+# list to sort orders and compile the clubs ordered
     orders = []
     CLUBS_AVAILABLE = sorted(CLUBS_AVAILABLE,
                              key=lambda k: (k["price"], k["name"]))
 
+# main loop handles order creation
     while True:
         order = Order()
         if order.get_details() != "CANCEL":
@@ -181,7 +196,7 @@ if __name__ == "__main__":
             orders.append(order)
         else:
             print("\nOrder cancelled.")
-
+# prompts the user to order again Y/N or see all Orders press [enter]
         user_input = get_input(
             r"[YyNnOo]", "Would you like to enter another order \
             or view all previous orders? [Yes]/No/Orders:",
@@ -197,3 +212,4 @@ if __name__ == "__main__":
                 print_order(order)
                 if i == len(orders) - 1:
                     print("-" * 58)
+# orders dsiplay all previous orders
