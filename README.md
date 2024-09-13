@@ -402,18 +402,18 @@ Before stepping into creating tests for our application, we approached this with
 |--|--|
 | Pick Up or delivery (Delivery entered) | Pass  |
 | Enter Customer Name| Pass |
-| Delivery Address| Pass|
-| Phone Number | Pass |
-|Number of clubs to order| Pass  |
+| Enter Delivery Address| Pass|
+| Enter Phone Number | Pass |
+| Enter Number of clubs to order| Pass  |
 | Enter Brand of clubs you would like to order |Pass|
 | Order Saved| Pass  |
 | Order Summary with price and delivery locations| Pass  |
 |--|--|
 | Pick up or delivery (Pick up entered) | Pass  |
 | Enter Customer Name | Pass|
-| Number of clubs to order| Pass|
-| Selection of brand no 1 Adams | Pass |
-|Order saved| Pass |
+| Enter Number of clubs to order| Pass|
+| Enter Selection of brand no 1 Adams | Pass |
+| Order saved| Pass |
 | Order summary with price and delivery | Pass|
 |  |  |
 
