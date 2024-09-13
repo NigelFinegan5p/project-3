@@ -53,10 +53,16 @@ Step.7 Enter the number of sets you want to order<p></p>
 Step.8 Based on selection order total is displayed with price and customer details<p></p>
 <p></p>
 <p></p>
+<p></p>
+<p></p>
+<p></p>
 After entering customer details the option for clubs selection appears
 
 ![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/1.jpg)
 
+<p></p>
+<p></p>
+<p></p>
 <p></p>
 <p></p>
 Choosing the brands available from 01 to 07 Adams to Titleist
@@ -65,9 +71,15 @@ Choosing the brands available from 01 to 07 Adams to Titleist
 
 <p></p>
 <p></p>
+<p></p>
+<p></p>
+<p></p>
 Order saved with order details and price
 
 ![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/3.jpg)
+<p></p>
+<p></p>
+<p></p>
 <p></p>
 <p></p>
 
