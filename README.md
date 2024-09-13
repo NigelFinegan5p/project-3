@@ -425,6 +425,16 @@ PEP8 Linter
 Writing high-quality, readable Python code by using the guidelines laid out in PEP 8 and tested using the pep8 linter we found the following errors and fixed then accordingly.
 <p></p>
 With a focus on the guidelines and following them to really improve my project code, and its potential especially when it comes to sharing my portfolio code with potential employers or collaborators in the future.
+<p></p>
+
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/pep8.errors.jpg)
+
+<p></p>
+
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/pep8.noerror..jpg)
+
+<br></br>
+
 
 
 
