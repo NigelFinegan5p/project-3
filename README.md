@@ -20,7 +20,7 @@ The Value/Price proposition is very simple, when visiting the sun-kissed fairway
 
 <br></br>
 
-## Problem/Solution Fit & A Franchise opportunity
+## The Story -- Problem/Solution Fit & A Franchise opportunity
 
 ![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/faroshop.jpg)
 <p></p>
