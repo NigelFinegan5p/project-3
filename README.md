@@ -517,3 +517,4 @@ Python Distilled (Developers Library) (1st Edition) (David Beazley)
 Python for Dummies by Aahz Maruch and Stef Maruch
 
 [https://www.vailtech.net/sites/default/files/Python_Essentials_for_Dummies.pdf](https://www.vailtech.net/sites/default/files/Python_Essentials_for_Dummies.pdf)
+
