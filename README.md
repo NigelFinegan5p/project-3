@@ -41,6 +41,11 @@ With a focus on internal stock controls and the ordering optimization we develop
 
 ## Design & Data Model
 
+<p></p>
+
+![enter image description here](https://github.com/NigelFinegan5p/project-3/blob/main/images/6.jpg)
+<p></p>
+
 Since project one i have hand sketched project ideas and scoped out proejcts this way and found this an effective approach. <p></p>
 The flow chart with the diagram shows at high level, the flow of control within the application and the inputs required. The final output shows an order summary with total price and quantity with customer details.
 
